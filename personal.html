@@ -1,82 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/864bdb8ff1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="C:\Users\sneha\OneDrive\Pictures\sb.jpg" alt="sneha bhosale"></td>
-            <td><h1>sneha bhosale</h1>
-            <p><em>web developer at </em> <strong>google enterprise</strong></p>
-            <p>i love making websites😍</p>
-            </td>
-            </tr>
-        
-    </table>
-    <hr>
-    <h3>my projects</h3>
-    <ul>
-        <li>online voting system</li>
-        <li>food menu </li>
-    </ul>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <i class="cross fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>WEB DEVELOPER</p>
+        <h1>I am <span>sneha bhosale</span><br>from india </h1>
+      </div>
+    </div>
+  </div>
+  <!--................about.............................. -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1 ig2">
+          <img src="/images/f.jpeg" >
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <br>
+          <p>A Web Developer with creative and Analytical skills to enhance my skills and contribute to the growth of the company 
+            proficient in various platforms, languages and embedded systems. A Web Developer with creative and Analytical skills to enhance my skills and contribute to the growth of the company 
+            proficient in various platforms, languages and embedded systems. A Web Developer with creative and Analytical skills to enhance my skills and contribute to the growth of the company 
+            proficient in various platforms, languages and embedded systems.  </p>
+            <br>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> <br>Designing website</li>
+                <li><span>Web Development</span> <br>Web app Development</li>
+                <li><span>App Development </span> <br>Buile Android App</li>
+
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020</span> <br>project on online voting system </li>
+                <li><span>2021</span> <br>food menu website</li>
+                <li><span>2023</span> <br>portfolio website</li>
+
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span> <br>MCA from Chandigarh University</li>
+                <li><span>2020</span> <br>BCA from punjab University</li>
+                <li><span>2018</span> <br>12<sup>th</sup> from Gurukul Global School, Chandigarh</li>
+
+              </ul>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!------------services---------------------------->
+  <br><br>
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2><br>
+          <p>A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. A good web design is easy to use, aesthetically pleasing, and suits the user group and brand of the website.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2><br>
+          <p>A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2> <br>
+          <p>A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!---------------portfolio---------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" >
+          <div class="layer">
+            <h3>Online Food Ordering</h3>
+            <p>This website allows you to order food from a restraunt online of a particualr city  </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" >
+          <div class="layer">
+            <h3>Online Voting System</h3>
+            <p>This website allows you to vote from home without standing in the queue.  </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" >
+          <div class="layer">
+            <h3>Personal portfolio website</h3>
+            <p>This website allows you to view my know about  my projects and my achievements.  </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+     <a href="#" class="btn">See More</a> 
+
+    </div>
+  </div>
+  <!--------------contact --------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-sharp fa-solid fa-paper-plane"></i>snehabhosale7860@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-phone-volume"></i>9781019800</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sneha-bhosale-4b26b1250/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/snehabhosale7860/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://twitter.com/onlyme21260"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="images/Black and White Clean Personal Resume (5).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ©️ Sneha Bhosale Made By <i class="fa-solid fa-heart"></i> snehabhosale7860 </p>
+    </div>
+  </div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents");
     
-        <h3>work experience</h3>
-        <table>
-        
-            <thead>
-                <th>dates</th>
-                <th>work</th>
-            </thead>
-            <tbody>
-                <tr>
-                <td>2018-19</td>
-                <td>lead developer</td>
-                </tr>
-                <tr>
-                    <td>2020</td>
-                    <td>researcher at iim</td>
-
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>skills</h3>
-       <table>
-        <tr>
-        <table>
-            <tr>
-                <td>ios developer</td>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td>web developer</td>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td>photography</td>
-                <td>⭐⭐⭐⭐</td>
-            </tr>
-        </tr>
-        </table>
-        <tr>
-        <table>
-            <tr>
-                <td>ios developer</td>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td>web developer</td>
-                <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <td>photography</td>
-                <td>⭐⭐⭐⭐</td>
-            </tr>
-        </table>
-    </tr>
-   </table>
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_cPS3IG6A5nyNmWcAj1g-lbaJuLiFb-HWZFu8N_orGF4aVomMzsrr-CD9Pn22qks9Ng/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML ="Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
